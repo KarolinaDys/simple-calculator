@@ -1,5 +1,5 @@
-let firstNumber = document.getElementById("firstnumber");
-let secondNumber = document.getElementById("secondnumber");
+let firstNumber = document.getElementById("firstnumber").value;
+let secondNumber = document.getElementById("secondnumber").value;
 const btn = document.getElementById("button");
 
 function Result() {
