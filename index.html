@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
     <title>Simple JavaScript Calculator</title>
   </head>
   <body>
-     <form action="/page.js">
+     <form>
         <input type="number" name="firstnumber" id="firstnumber" placeholder="First Number">
         <select name="sing" id="sing">
             <option>+</option>
@@ -16,8 +15,10 @@
             <option>/</option>
         </select>
         <input type="number" name="secondnumber" id="secondnumber" placeholder="Second Number">
-        <button type="button"id="result">=</button>
-        <input type="submit" value="[Result]" name="result" id="result" style="background-color: greenyellow">
+        <button type="button" id="button">=</button>
+        <output  placeholder="[Result]" name="result" id="result" for="firstnumber secondnumber" style="background-color: greenyellow"></output>
      </form>
+     <script type="text/javascript" src="page.js">
+     </script>
   </body>
   </html>
