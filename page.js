@@ -1,16 +1,17 @@
-let firstNumber = document.getElementById("firstnumber").value;
-let secondNumber = document.getElementById("secondnumber").value;
-const btn = document.getElementById("button");
-let sing = document.getElementById("sing").value;
+let firstNumber = Number(document.getElementById("firstnumber").value);
+let secondNumber = Number(document.getElementById("secondnumber").value);
 
+let sing =  document.getElementById("sing").value;
+const btn = document.getElementById("button");
 function Result() {
-    let firstNumber = document.getElementById("firstnumber").value;
-    let secondNumber = document.getElementById("secondnumber").value;   
+    let firstNumber =Number(document.getElementById("firstnumber").value);
+    let secondNumber =Number(document.getElementById("secondnumber").value); 
+    let sing =  document.getElementById("sing").value;
     let result;
-    if     (sing ==='+')  result = firstNumber + secondNumber;
-    else if (sing ==='-') result = firstNumber - secondNumber;
+    if      (sing === '+') result =  firstNumber + secondNumber;
+    else if (sing === '-') result = firstNumber - secondNumber;
     else if (sing ==='*') result = firstNumber * secondNumber;
-    else if (sing ==='/')  result = firstNumber / secondNumber;
+    else if (sing === '/')  result = firstNumber / secondNumber;
     document.getElementById('result').innerHTML = result;
     return (result)
 };
